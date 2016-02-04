@@ -28,6 +28,24 @@ class BootStrap {
 		code:'CFTA101',
 		startDate:new Date('19/01/2015'),
 		endDate:new Date('19/01/2020')).save()
+
+		def student1=new Student(name: 'Reece Cope', 
+		studentid: 'R33CE',
+		email:'''LoremIpsum@dolor.com''',
+		
+		dob:new Date('19/01/1995'),
+		username: 'lorem',
+		password: 'ipsum',
+		course: 'Web System Design').save()
+
+		def student2=new Student(name: 'Connor Woolley', 
+		studentid: 'CONNOR',
+		email:'''Lorem2Ipsum@dolor.com''',
+		
+		dob:new Date('19/01/1995'),
+		username: 'lorem2',
+		password: 'ipsum2',
+		course: 'Web System Design').save()
 		
     }
     def destroy = {
