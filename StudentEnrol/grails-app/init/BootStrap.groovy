@@ -46,6 +46,20 @@ class BootStrap {
 		username: 'lorem2',
 		password: 'ipsum2',
 		course: 'Web System Design').save()
+
+		def lecturer1=new Lecturer(name: 'Saeed Hassani',
+		post: 'Lecturer',
+		email:'SaeedHassani@gmail.com',
+		department: 'Computing',
+		subject: 'Networking',
+		research:'''Networking and beyond''').save()
+
+		def lecturer2=new Lecturer(name: 'Elizabeth Uruchurtu',
+		post: 'Lecturer',
+		email:'EUruchurtu@gmail.com',
+		department: 'Computing',
+		subject: 'Effective Design for Multimedia',
+		research:'''Getting Tom to do work''').save()
 		
     }
     def destroy = {
