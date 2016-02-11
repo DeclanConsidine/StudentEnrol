@@ -60,6 +60,26 @@ class BootStrap {
 		department: 'Computing',
 		subject: 'Effective Design for Multimedia',
 		research:'''Getting Tom to do work''').save()
+
+		def leader1= new Leader(fullName: 'Dr Anne Roberts',
+		post:'Senior Lecturer',
+		subject:'Animation',
+		email:'a.d.roberts@theUni.ac.uk',
+		office:'Room 234',
+		bio:'''Lorem Ipsum dolor sit alem, am aeufm fhhhxdd''').save()
+		
+		def leader2= new Leader(fullName: 'Dr Tonderai Maswera',
+		post:'Senior Lecturer',
+		subject:'Web Design',
+		email:'T.Maswera@theUni.ac.uk',
+		office:'Room 138',
+		bio:'''Lorem Ipsum dolor sit alem, am aeufm fhhhxdd''').save()
+
+		def module1= new Module(title:'Web Architectures',
+		code: 'WA234',
+		credits: 5,
+		lecturer:'Dr Steve Crossbar',
+		description:'''Lorem ipsum dollar blitzen etc ludus contentios, ut nam quadrae qunda''').save()
 		
     }
     def destroy = {
